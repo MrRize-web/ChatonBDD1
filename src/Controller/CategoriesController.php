@@ -19,6 +19,9 @@ class CategoriesController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/categories/ajouter", name="categorie_ajouter")
+     */
     public function ajouter()
     {
         //je crée un objet catégorie vide
