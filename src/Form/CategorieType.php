@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+//use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use App\Entity\Categorie;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -14,6 +15,7 @@ class CategorieType extends AbstractType
         $builder
             ->add('Titre')
             ->add('Description')
+            ->add('Enregistrer', SubmitType::class, ["label"=>"Enregistrer"])
         ;
     }
 

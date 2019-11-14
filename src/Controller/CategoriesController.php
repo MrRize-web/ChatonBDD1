@@ -32,6 +32,6 @@ class CategoriesController extends AbstractController
         return $this->render('categories/formulaire.html.twig',[
             "formulaire"=>$formulaire->createView()
             ,"h1"=>"Ajouter une catégorie"
-        ])
+        ]);
     }
 }
